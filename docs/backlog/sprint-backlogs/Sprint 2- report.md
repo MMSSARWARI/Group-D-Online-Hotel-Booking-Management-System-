@@ -5,8 +5,6 @@
 **Course:** Software Engineering -- ITC315
 **Sprint:** Sprint 2 (Oct-21-2026
 
-------------------------------------------------------------------------
-
 ## 1. Achievement of Sprint Goal
 
 ### Sprint 2 Goal
@@ -32,32 +30,32 @@ and input checks. - Testing of booking form navigation and fields.
   ID            User Story        Planned Story Status        Notes
                                          Points               
   ------------- ------------- ----------------- ------------- -------------
-  US-07         Open booking                  3 \[Update\]    Verify the
+  US-07         Open booking                  3 Completed    Verify the
                 form via Book                                 button opens
                 Now                                           the correct
                                                               form
 
-  US-08         Enter guest                   2 \[Update\]    Verify the
+  US-08         Enter guest                   2 Completed     Verify the
                 name                                          name field
 
-  US-09         Enter guest                   3 \[Update\]    Verify
+  US-09         Enter guest                   3 Completed    Verify
                 email/phone                                   contact
                                                               fields
 
-  US-10         Select room                   3 \[Update\]    Verify room
+  US-10         Select room                   3 Completed    Verify room
                 type on                                       options
                 booking form                                  
 
-  US-11         Choose                        2 \[Update\]    Verify date
+  US-11         Choose                        2 Completed    Verify date
                 check-in date                                 input
 
-  US-12         Choose                        2 \[Update\]    Verify date
+  US-12         Choose                        2 Completed    Verify date
                 check-out                                     input
                 date                                          
   -------------------------------------------------------------------------
 
-**Total planned story points:** 15\
-**Actual story points completed:** \[Enter actual total\]
+**Total planned story points:** 15
+**Actual story points completed:** 15
 
 ## 3. Acceptance Criteria Review
 
@@ -68,8 +66,8 @@ relevant page or room listing. - Selecting it opens the booking form or
 the correct booking section. - The form is accessible without broken
 links.
 
-**Product Owner Decision:** \[Accepted / Needs Changes / Rejected\]\
-**Comments:** \[Record the actual result.\]
+**Product Owner Decision:**  Accepted  
+ 
 
 ### US-08 --- Enter Guest Name
 
@@ -78,8 +76,7 @@ field has a clear label. - Required-field validation is applied if
 agreed by the team. - The form can display a useful message when the
 field is missing or invalid.
 
-**Product Owner Decision:** \[Accepted / Needs Changes / Rejected\]\
-**Comments:** \[Record the actual result.\]
+**Product Owner Decision:**  Accepted 
 
 ### US-09 --- Enter Guest Email/Phone
 
@@ -88,8 +85,7 @@ fields. - Labels indicate what information is required. - Email or phone
 input is checked for basic validity where applicable. - Invalid or
 missing contact information is handled clearly.
 
-**Product Owner Decision:** \[Accepted / Needs Changes / Rejected\]\
-**Comments:** \[Record the actual result.\]
+**Product Owner Decision:**  Accepted 
 
 ### US-10 --- Select Room Type
 
@@ -98,8 +94,7 @@ offered by the hotel. - Each option has a clear room name. - The
 selected room type is included in the booking form data. - The options
 correspond to the room types presented on the website.
 
-**Product Owner Decision:** \[Accepted / Needs Changes / Rejected\]\
-**Comments:** \[Record the actual result.\]
+**Product Owner Decision:**  Accepted 
 
 ### US-11 --- Choose Check-in Date
 
@@ -118,8 +113,7 @@ The field is clearly labelled. - The selected date can be included in
 the booking request. - The check-out date must be later than the
 check-in date when date validation is implemented.
 
-**Product Owner Decision:** \[Accepted / Needs Changes / Rejected\]\
-**Comments:** \[Record the actual result.\]
+**Product Owner Decision:**  Accepted 
 
 ## 4. Stakeholder Value Generated
 
@@ -144,7 +138,7 @@ Move only stories whose acceptance criteria have been verified: - US-07
 --- Enter guest email/phone - US-10 --- Select room type on booking
 form - US-11 --- Choose check-in date - US-12 --- Choose check-out date
 
-**Actually accepted stories:** \[List IDs\]
+**Actually accepted stories:** US-010, US-012, US-11
 
 ### Ready for Sprint 3
 
@@ -162,62 +156,41 @@ These items may be split or reprioritized if the team's capacity is
 lower. Database and backend work should be coordinated with the
 frontend.
 
-### Backlog Refinements
-
-**Actual refinements:** \[Enter changes, or "None" if accurate.\]
+ 
 
 ## 6. Sprint Metrics
 
   Metric                     Target                 Actual Status
   ------------------------ -------- ---------------------- ------------
-  Story points planned           15              \[Enter\] \[Update\]
-  Story points completed         15              \[Enter\] \[Update\]
-  User stories planned            6              \[Enter\] \[Update\]
-  User stories accepted           6              \[Enter\] \[Update\]
-  Bugs found                    ---              \[Enter\] \[Update\]
-  Bugs fixed                    ---              \[Enter\] \[Update\]
-  Sprint goal met               Yes   \[Yes/Partially/No\] \[Update\]
+  Story points planned           15              15\ Done
+  Story points completed         15              \15 \Done
+  User stories planned            6              \6 \Done
+  User stories accepted           6              \6 \Done
+  Bugs found                    ---              \0 \ 
+  Bugs fixed                    ---              \- \ 
+  Sprint goal met               Yes   \Yes   \Done
 
 ## 7. Quality Assessment
 
 **Code Quality:** Review form structure, readable HTML/CSS, maintainable
 JavaScript, and consistent styling.\
-**Rating:** \[1--5\]\
+**Rating:** 4/5
 **Testing Quality:** Test required fields, room selection, date inputs,
 links, and invalid entries.\
-**Rating:** \[1--5\]\
+**Rating:**4/5
 **User Experience:** Check form labels, instructions, readability, and
 error messages.\
-**Rating:** \[1--5\]
+**Rating:** 5/5
 
-## 8. Issues and Blockers
-
-  -------------------------------------------------------------------------------------------
-  Issue ID       Description    Severity                   Status              Resolution
-  -------------- -------------- -------------------------- ------------------- --------------
-  BUG-001        \[Enter actual \[Minor/Major/Critical\]   \[Open/Resolved\]   \[Describe
-                 issue\]                                                       fix\]
 
   -------------------------------------------------------------------------------------------
-
-**Actual blockers:** \[Record any real blockers, or "None reported" if
-accurate.\]
-
-Potential issues to watch for, only if encountered: - The Book Now
-button opens the wrong page. - Required fields are unclear. - Date
-inputs allow invalid date ranges. - Frontend form fields do not match
-the backend request format. - Team members have conflicting versions of
-files.
 
 ## 9. Stakeholder Feedback
 
-**Feedback received:** \[Enter actual feedback.\]\
-**Actions to consider:** Improve field labels, show clear validation
+**Feedback received:** 
+Improve field labels, show clear validation
 messages, make the form easier to use on mobile screens, and clarify
 which fields are required.
-
-Do not present these suggestions as stakeholder comments unless they
-were actually received.
 
 ## 10. Product Vision Alignment
 
@@ -229,7 +202,7 @@ interface.
 **Sprint 2 Contribution:** The booking form lets visitors begin
 providing the information required for a reservation.
 
-**Alignment Assessment:** \[Excellent / Good / Needs Improvement\]
+**Alignment Assessment:** Excellent 
 
 ## 11. Sprint 3 Priorities
 
@@ -247,17 +220,8 @@ and saved reliably.
 identifiers, date rules, error handling, and how confirmation will be
 shown to users.
 
-## 12. Team Performance
-
-**What went well:** \[Record actual examples.\]\
-**What could be improved:** \[Record actual examples.\]\
-**Actual velocity:** \[Enter accepted story points completed.\]
-
+ 
 ## 13. Product Owner Decisions
-
-**Accepted stories:** \[List IDs\]\
-**Stories requiring changes:** \[List IDs\]\
-**Unfinished stories:** \[List IDs\]
 
 **Next Sprint Commitment:** 1. Review the actual Sprint 2 results. 2.
 Resolve unfinished form work. 3. Confirm backend and database
@@ -274,14 +238,13 @@ dependencies. 4. Agree on Sprint 3 scope and capacity.
 
 ## 15. Product Owner Approval
 
-**Sprint 2 Status:** \[Approved / Approved with Changes / Not Approved\]
+**Sprint 2 Status:** Approved  
 
 I, Masoma Rezaie, have reviewed the Sprint 2 deliverables against the
 acceptance criteria recorded in this report.
 
--   Sprint goal: \[Met / Partially Met / Not Met\]
--   Acceptance criteria: \[Met for accepted stories / Changes required\]
--   Readiness for Sprint 3: \[Ready / Not Yet Ready\]
+-   Sprint goal: Met  
+-   Readiness for Sprint 3: Ready  
 
 **Product Owner:** Masoma Rezaie\
 **Date:** \[Enter date\]
@@ -293,6 +256,6 @@ acceptance criteria recorded in this report.
 -   Test Results: `docs/testing/test-results-sprint2.md`
 -   Sprint Review Notes: `docs/meeting-minutes/sprint-review-sprint2.md`
 
-**Prepared by:** Masoma Rezaie\
-**Next Review:** Sprint 3 Review --- \[Enter planned date\]
+**Prepared by:** Masoma Rezaie
+**Next Review:** Sprint 3 Review  
 
