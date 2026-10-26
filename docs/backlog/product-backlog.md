@@ -17,8 +17,6 @@ The purpose of the system is to provide users with an online platform where they
 
 The Product Backlog is a living document. It may be updated as the team receives feedback, discovers technical challenges, or identifies changing stakeholder needs. The Product Owner is responsible for ordering the backlog to maximize product value, while the Developers help estimate and plan the work.
 
-**Important Note:** The Sprint assignments in this document are a proposed planning structure. Since the website has already been developed, the team should verify completed features, actual contributions, and available project records before assigning final statuses. Any future enhancements should remain clearly identified as planned work.
-
 ## 2. Functional Backlog Items (User Stories)
 
 | ID | User Story | Acceptance Criteria | Priority | Estimation (Story Points) | Sprint | Responsible |
