@@ -1,4 +1,3 @@
-# Product Backlog
 # Aysan Luxury Hotel Booking System Backlog
 
 **Product Owner:** Masoma Rezaie  
@@ -74,8 +73,6 @@ Non-functional requirements describe the quality, security, reliability, compati
 The security, performance, compatibility, and reliability criteria must be verified through appropriate testing. They are requirements, not claims that the current implementation already satisfies them.
 
 ## 5. Prioritization Strategy
-
-The Product Owner prioritizes backlog items according to business value, user needs, dependencies, risk, and available resources.
 
 **High Priority**
 - Core hotel and room information.
