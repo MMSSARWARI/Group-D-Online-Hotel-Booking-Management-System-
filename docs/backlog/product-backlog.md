@@ -171,53 +171,12 @@ Planned items:
 
 **Expected Delivery:** A tested release candidate with completed documentation and any approved enhancements that fit the remaining project capacity.
 
-## 7. Backlog Refinement and Sprint Changes
-
-The Product Backlog should be reviewed regularly. During refinement, the team clarifies requirements, checks acceptance criteria, estimates effort, and adjusts priorities where necessary.
-
-For the Aysan Luxury Hotel Booking System, room availability and booking validation may become more urgent if testing reveals that users can request already-booked rooms. In that case, the Product Owner can move these items higher in the backlog, and the team can discuss their inclusion during Sprint Planning.
-
-Changes should be recorded with the reason for the change. For example:
-
-- Room availability may be prioritized if conflicting reservations are discovered.
-- Database security may become urgent if credentials are exposed or authorization is missing.
-- Reporting may be postponed if reliable booking storage has not yet been completed.
-
-This demonstrates an adaptive approach to development. However, changes should reflect actual decisions and feedback rather than being recorded as historical events that did not occur.
-
-## 8. Definition of Done
-
-A backlog item should only be marked Done when the team has verified that it meets the agreed Definition of Done.
-
-For this project, a suggested Definition of Done is:
-
-- The feature meets its acceptance criteria.
-- The implementation is integrated with the rest of the application.
-- Relevant tests have been completed and passed.
-- Significant defects have been resolved or explicitly documented.
-- Database changes, if applicable, have been tested.
-- Relevant project documentation has been updated.
-- The completed work is committed to the GitHub repository.
-- No known critical security or data-integrity issue prevents the feature from being safely used.
-
-## 9. Estimation and Backlog Maintenance
-
-Story Points are relative estimates of effort, complexity, and uncertainty. They are not hours or days. The team should agree on its estimation approach and revise estimates when new information becomes available.
-
-The proposed Sprint assignments and estimates in this document are starting points for team discussion. Before final submission, the team should verify the actual implementation, decide which items belong in the project scope, and confirm that each Sprint contains a realistic amount of work.
-
-The Product Owner maintains the ordered Product Backlog. The Developers estimate the work and decide how to implement the selected items. The Scrum Master helps the team use Scrum effectively and improve its process.
-
 ## 10. Conclusion
 
 The Product Backlog for the Aysan Luxury Hotel Booking System organizes the system's main user-facing features, booking functionality, database requirements, and quality improvements into prioritized work items. It provides a foundation for Sprint Planning, system modeling, development, testing, and progress tracking.
 
 By maintaining clear acceptance criteria, realistic priorities, and an up-to-date backlog, the team can demonstrate how Software Engineering principles and the Scrum framework support the development and improvement of the hotel booking system.
 
-**Prepared by:** [Your Name]  
-**Role:** Product Owner / Project Team Member  
+**Prepared by:** Masoma Rezaie
+**Role:** Product Owner  
 **Course:** Software Engineering – ITC315
-
-| ID | User Story | Priority | Story Points | Sprint | Status |
-|---|---|---|---|---|---|
-| US-01 | As a ..., I want ..., so that ... | High | | | To Do |
