@@ -15,8 +15,6 @@ Each backlog item includes a unique ID, description, acceptance criteria, priori
 
 The purpose of the system is to provide users with an online platform where they can explore hotel information, browse room types, compare prices, and submit room booking requests. The system includes Home, About Us, Rooms, Booking, and Contact pages and uses HTML, CSS, JavaScript, and MySQL.
 
-The Product Backlog is a living document. It may be updated as the team receives feedback, discovers technical challenges, or identifies changing stakeholder needs. The Product Owner is responsible for ordering the backlog to maximize product value, while the Developers help estimate and plan the work.
-
 ## 2. Functional Backlog Items (User Stories)
 
 | ID | User Story | Acceptance Criteria | Priority | Estimation (Story Points) | Sprint | Responsible |
