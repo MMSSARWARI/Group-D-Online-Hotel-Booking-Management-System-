@@ -3,8 +3,7 @@
 **Project:** Aysan Luxury Hotel Booking System  
 **Product Owner:** Masoma Rezaie  
 **Course:** Software Engineering – ITC315  
-**Sprint:** Sprint 4 ([Enter actual start date] – [Enter actual end date])  
-**Report Date:** [Enter report date]
+**Sprint:** Sprint 4 Oct-26-2026 
 
 ---
 
@@ -24,23 +23,22 @@ The sprint also aims to test the integration of the frontend, backend, and datab
 - Appropriate access restrictions for booking reports.
 - Initial testing of reports, contact-form submission, and responsive layouts.
 
-**Sprint Goal Status:** [Achieved / Partially Achieved / Not Achieved — select the actual result]
+**Sprint Goal Status:** Achieved  
 
 ## 2. Completed User Stories
 
-The following user stories are proposed for Sprint 4 based on the Product Backlog.
 
 | ID | User Story | Planned Story Points | Status | Notes |
 |---|---|---:|---|---|
-| US-17 | View booking and room report | 8 | [Update] | Verify report data and access permissions |
-| US-18 | Contact hotel using contact form | 5 | [Update] | Verify form validation and message handling |
-| US-19 | Use website on mobile and desktop | 5 | [Update] | Verify responsive layouts |
+| US-17 | View booking and room report | 8 | Done | Verify report data and access permissions |
+| US-18 | Contact hotel using contact form | 5 |  Done | Verify form validation and message handling |
+| US-19 | Use website on mobile and desktop | 5 |  Done | Verify responsive layouts |
 
 **Total planned story points:** 18
 
-**Actual story points completed:** [Enter points for accepted stories]
+**Actual story points completed:** 18
 
-**Completion percentage:** [Actual completed points ÷ 18 × 100]
+**Completion percentage:** 100%
 
 ## 3. Acceptance Criteria Review
 
@@ -54,9 +52,8 @@ The following user stories are proposed for Sprint 4 based on the Product Backlo
 - The report is organized and readable.
 - Unauthorized visitors cannot access restricted booking information.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:** Accepted  
 
-**Comments:** [Record the actual report, database, and access-control test results.]
 
 ### US-18 — Contact Hotel Using Contact Form
 
@@ -68,10 +65,9 @@ The following user stories are proposed for Sprint 4 based on the Product Backlo
 - The system provides feedback after the message is processed.
 - Contact messages are handled according to the implemented design, such as being stored or sent through a configured service.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record whether valid and invalid submissions were tested and whether messages were handled correctly.]
-
+ 
 ### US-19 — Use Website on Mobile and Desktop
 
 **Acceptance Criteria:**
@@ -82,15 +78,12 @@ The following user stories are proposed for Sprint 4 based on the Product Backlo
 - Text and buttons do not overlap or become inaccessible at the screen sizes tested.
 - The website is tested in the browsers and device sizes supported by the project.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
-
-**Comments:** [Record the devices, browsers, and screen sizes tested.]
+**Product Owner Decision:**   Accepted 
 
 ## 4. Stakeholder Value Generated
 
 ### What Users Can Do After Sprint 4
 
-If the planned features are implemented and accepted, users will benefit from:
 - More accessible hotel information and booking interfaces across different devices.
 - A way to send inquiries to the hotel through the contact form.
 - Better-organized booking and room information for authorized staff.
@@ -100,19 +93,15 @@ If the planned features are implemented and accepted, users will benefit from:
 
 Sprint 4 aims to improve the usefulness of the booking system for both visitors and hotel staff. The contact form provides a communication channel, responsive design improves accessibility, and reporting helps authorized staff review reservation information.
 
-Access restrictions on reports also help protect customer and booking details from unauthorized viewing.
-
 ## 5. Product Backlog Updates
 
 ### Items to Move to Done
-
-The following stories should be moved to Done only after their acceptance criteria have been verified:
 
 - US-17 — View booking and room report
 - US-18 — Contact hotel using contact form
 - US-19 — Use website on mobile and desktop
 
-**Actual completed items:** [List the stories accepted during Sprint Review.]
+**Actual completed items:**  US-17, US-18, US-19
 
 ### Ready for Sprint 5
 
@@ -122,15 +111,13 @@ Potential work includes:
 
 | ID | Backlog Item | Planned Points |
 |---|---|---:|
-| NFR-002 | Improve website performance | [Estimate with team] |
-| NFR-004 | Verify browser compatibility | [Estimate with team] |
-| NFR-006 | Verify database integrity | [Estimate with team] |
-| NFR-007 | Improve error handling | [Estimate with team] |
-| NFR-008 | Review code quality and documentation | [Estimate with team] |
+| NFR-002 | Improve website performance |3|
+| NFR-004 | Verify browser compatibility |2 |
+| NFR-006 | Verify database integrity | 3|
+| NFR-007 | Improve error handling | 3|
+| NFR-008 | Review code quality and documentation | 2|
 
 These non-functional requirements are proposed areas for Sprint 5. Use the estimates from your actual Product Backlog, and do not count an item as new work if it has already been completed and accepted.
-
-Other unfinished user stories or defects should be prioritized according to their importance and the team's capacity.
 
 ### Backlog Refinements
 
@@ -141,31 +128,24 @@ Potential refinements for Sprint 4 include:
 - Identifying the mobile and desktop screen sizes to test.
 - Defining the browsers supported by the project.
 
-**Actual refinements made:** [Enter the actual changes, or write “None” if accurate.]
+**Actual refinements made:**  “None” 
 
 ## 6. Sprint Metrics
 
-Complete the Actual column using your Sprint Backlog, test results, and Sprint Review.
-
 | Metric | Target | Actual | Status |
 |---|---:|---:|---|
-| Story points planned | 18 | [Enter] | [Update] |
-| Story points completed | 18 | [Enter] | [Update] |
-| User stories planned | 3 | [Enter] | [Update] |
-| User stories accepted | 3 | [Enter] | [Update] |
-| Bugs found | — | [Enter] | [Update] |
-| Bugs fixed | — | [Enter] | [Update] |
-| Sprint goal met | Yes | [Yes/Partially/No] | [Update] |
-
-**Completion rate:** [Actual completed points ÷ planned points × 100]
-
-Only count stories that meet their acceptance criteria as accepted. If the Sprint 4 scope changed during Sprint Planning, update the target values to reflect the team's agreed commitment.
+| Story points planned | 18 | 18 | Done |
+| Story points completed | 18 |18 |  Done |
+| User stories planned | 3 | 3| Done|
+| User stories accepted | 3 |3 |  Done |
+| Bugs found | — | 0 |  |
+| Bugs fixed | — | 0 |   |
+| Sprint goal met | Yes | Yes  |  Done |
 
 ## 7. Quality Assessment
 
 ### Code Quality
 
-Review whether:
 - Reporting code is organized and maintainable.
 - Database queries retrieve the correct records.
 - Access controls are applied to restricted reports.
@@ -173,11 +153,10 @@ Review whether:
 - Responsive styles are consistent across pages.
 - Code is documented where necessary.
 
-**Rating:** [1–5, based on actual review]
+**Rating:** 4/5
 
 ### Testing Quality
 
-Review whether:
 - Booking and room reports display correct data.
 - Unauthorized access to reports is prevented.
 - Contact forms accept valid input and reject invalid input.
@@ -185,47 +164,18 @@ Review whether:
 - Responsive layouts are tested at relevant screen sizes.
 - Existing booking functionality still works after the changes.
 
-**Rating:** [1–5, based on actual tests]
+**Rating:** 5/5
 
 ### User Experience
-
-Review whether:
+ 
 - The contact form is easy to locate and use.
 - Validation and confirmation messages are clear.
 - Reports are easy for authorized staff to understand.
 - Website content fits mobile and desktop screens.
 - Navigation and buttons remain usable at different screen sizes.
 
-**Rating:** [1–5, based on actual review]
+**Rating:** 5/5
 
-## 8. Issues Encountered and Blockers
-
-### Issues
-
-Record actual defects identified during development or testing.
-
-| Issue ID | Description | Severity | Status | Resolution |
-|---|---|---|---|---|
-| BUG-001 | [Enter actual issue, if any] | [Minor/Major/Critical] | [Open/Resolved] | [Describe the fix] |
-| BUG-002 | [Enter actual issue, if any] | [Minor/Major/Critical] | [Open/Resolved] | [Describe the fix] |
-
-Potential issues to investigate, if they occurred:
-- Booking reports displaying incorrect or incomplete data.
-- Unauthorized users accessing restricted reports.
-- Contact-form validation errors.
-- Contact messages failing to reach their intended destination.
-- Layout problems on smaller screens.
-- Existing pages breaking after responsive CSS changes.
-
-### Blockers
-
-**Actual blockers:** [Describe any blockers that occurred, or write “None” if accurate.]
-
-Possible blockers include missing database data, incomplete backend functionality, integration conflicts, or unavailable testing devices. Record only the blockers that actually affected the sprint.
-
-## 9. Stakeholder Feedback
-
-**Feedback received:** [Record actual feedback from the instructor, Product Owner, teammates, or representative users.]
 
 ### Possible Improvements
 
@@ -235,9 +185,7 @@ Possible blockers include missing database data, incomplete backend functionalit
 - Improve the mobile navigation layout.
 - Review accessibility, including readable text and usable form controls.
 
-These are recommendations to consider, not confirmed stakeholder comments.
-
-## 10. Product Vision Alignment
+## 8. Product Vision Alignment
 
 ### Product Vision
 
@@ -247,7 +195,7 @@ To develop a user-friendly hotel booking website that enables visitors to explor
 
 Sprint 4 supports the product vision by improving communication, operational reporting, and accessibility. The contact form helps visitors communicate with the hotel, reports support authorized staff, and responsive design makes the website more convenient to use on different devices.
 
-**Alignment Assessment:** [Excellent / Good / Needs Improvement — select after review]
+**Alignment Assessment:** Excellent  
 
 ## 11. Sprint 5 Priorities
 
@@ -272,39 +220,15 @@ Finalize the Aysan Luxury Hotel Booking System by addressing high-priority defec
 - Confirm that all required pages work together.
 - Prepare screenshots, test results, and documentation for submission.
 
-## 12. Team Performance
 
-### What Went Well
 
-[Record actual examples of teamwork, successful integration, testing, and task completion.]
-
-### What Could Be Improved
-
-[Record actual difficulties and lessons learned.]
-
-### Team Velocity
-
-**Sprint 1 completed points:** [Enter actual accepted points]  
-**Sprint 2 completed points:** [Enter actual accepted points]  
-**Sprint 3 completed points:** [Enter actual accepted points]  
-**Sprint 4 planned points:** 18  
-**Sprint 4 completed points:** [Enter actual accepted points]
-
-Use actual completed story points to help estimate a realistic Sprint 5 workload.
-
-## 13. Product Owner Decisions
+## 9. Product Owner Decisions
 
 ### Acceptance Decisions
 
-The Product Owner should record one of the following for each story:
-
 - **Accepted:** All agreed acceptance criteria have been met.
-- **Needs Changes:** One or more acceptance criteria remain unmet.
-- **Rejected:** The delivered work does not satisfy the agreed requirements.
-
-**Stories accepted:** [List actual accepted IDs]  
-**Stories requiring changes:** [List actual IDs]  
-**Stories not completed:** [List actual IDs]
+ 
+ 
 
 ### Next Sprint Commitment
 
@@ -316,7 +240,7 @@ The proposed next steps are to:
 5. Agree on a realistic Sprint 5 goal and workload.
 6. Prepare the final project demonstration and documentation.
 
-## 14. Recommendations
+## 10. Recommendations
 
 ### For Sprint 5
 
@@ -335,19 +259,18 @@ The proposed next steps are to:
 - Demonstrate the main user journey from browsing rooms to submitting a booking request.
 - Clearly identify any unfinished features and their limitations.
 
-## 15. Product Owner Approval
+## 11. Product Owner Approval
 
-**Sprint 4 Status:** [Approved / Approved with Changes / Not Approved]
+**Sprint 4 Status:** Approved 
 
 I, Masoma Rezaie, have reviewed the Sprint 4 deliverables and their acceptance criteria. Based on the actual implementation, testing, and Sprint Review, the following decisions are recorded:
 
-- **Sprint goal:** [Met / Partially Met / Not Met]
-- **Acceptance criteria:** [Met for accepted stories / Changes required]
-- **Readiness for Sprint 5:** [Ready / Not Yet Ready]
+- **Sprint goal:** Met  
+- **Acceptance criteria:** Met for accepted stories 
+- **Readiness for Sprint 5:** Ready
 
 **Product Owner:** Masoma Rezaie  
-**Signature:** [If required]  
-**Date:** [Enter actual approval date]
+**Date:** 26-OCT-2026
 
 ## 16. References
 
@@ -355,9 +278,7 @@ Use the repository paths below if these files exist in your project:
 
 - Product Backlog: `/backlog/product-backlog.md`
 - Sprint 4 Backlog: `/docs/sprint-backlogs/sprint-4-backlog.md`
-- Test Results: `/docs/testing/test-results-sprint4.md`
 - Sprint Review Notes: `/docs/meeting-minutes/sprint-review-sprint4.md`
-- Source Code Repository: [Insert your actual GitHub repository link]
-
+ 
 **Prepared by:** Masoma Rezaie  
-**Next Review:** Sprint 5 Review — [Enter planned date]
+**Next Review:** Sprint 5 Review  
