@@ -1,8 +1,11 @@
 # Product Owner Sprint 2 Report
 
-**Project:** Aysan Luxury Hotel Booking System
-**Product Owner:** Masoma Rezaie
+#**Project:** Aysan Luxury Hotel Booking System 
+
+#**Product Owner:** Masoma Rezaie
+
 **Course:** Software Engineering -- ITC315
+
 **Sprint:** Sprint 2 (Oct-21-2026
 
 ## 1. Achievement of Sprint Goal
@@ -246,8 +249,7 @@ acceptance criteria recorded in this report.
 -   Sprint goal: Met  
 -   Readiness for Sprint 3: Ready  
 
-**Product Owner:** Masoma Rezaie\
-**Date:** \[Enter date\]
+**Product Owner:** Masoma Rezaie
 
 ## 16. References
 
