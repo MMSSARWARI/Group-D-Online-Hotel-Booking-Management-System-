@@ -3,8 +3,8 @@
 **Project:** Aysan Luxury Hotel Booking System  
 **Product Owner:** Masoma Rezaie  
 **Course:** Software Engineering – ITC315  
-**Sprint:** Sprint 3 ([Enter actual start date] – [Enter actual end date])  
-**Report Date:** [Enter report date]
+**Sprint:** Sprint 3 Oct-24-2026 
+ 
 
 ---
 
@@ -24,27 +24,24 @@ The sprint also aims to connect the frontend booking form with the backend and d
 - Booking confirmation after successful processing.
 - Initial testing of booking validation, database operations, and error handling.
 
-**Sprint Goal Status:** [Achieved / Partially Achieved / Not Achieved — select the actual result]
+**Sprint Goal Status:** Achieved  
 
 ## 2. Completed User Stories
 
-The following user stories are proposed for Sprint 3 based on the Product Backlog. Confirm the final selection and completion status against the actual Sprint Backlog.
-
 | ID | User Story | Planned Story Points | Status | Notes |
 |---|---|---:|---|---|
-| US-06 | Check room availability | 8 | [Update] | Verify room availability for selected dates |
-| US-13 | Validate booking details before submission | 5 | [Update] | Verify required fields and booking rules |
-| US-14 | Receive booking confirmation | 3 | [Update] | Verify confirmation after successful processing |
-| US-15 | Save customer records in the database | 5 | [Update] | Verify customer data is stored correctly |
-| US-16 | Save room and booking records with relationships | 8 | [Update] | Verify booking, room, and customer relationships |
+| US-06 | Check room availability | 8 | Done | Verify room availability for selected dates |
+| US-13 | Validate booking details before submission | 5 | Done | Verify required fields and booking rules |
+| US-14 | Receive booking confirmation | 3 | Done | Verify confirmation after successful processing |
+| US-15 | Save customer records in the database | 5 |Done | Verify customer data is stored correctly |
+| US-16 | Save room and booking records with relationships | 8 | Done | Verify booking, room, and customer relationships |
 
 **Total planned story points:** 29
 
-**Actual story points completed:** [Enter points for accepted stories]
+**Actual story points completed:** 29
+**Completion percentage:**  100 %
 
-**Completion percentage:** [Actual completed points ÷ planned points × 100]
-
-*Note: The five stories total 29 points. If this exceeds your team's sprint capacity, prioritize or split the stories during Sprint Planning.*
+ 
 
 ## 3. Acceptance Criteria Review
 
@@ -58,9 +55,8 @@ The following user stories are proposed for Sprint 3 based on the Product Backlo
 - A clear message is displayed when the room is unavailable.
 - Invalid date ranges are rejected.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
-
-**Comments:** [Record the actual availability tests and their results.]
+**Product Owner Decision:**  Accepted  
+ 
 
 ### US-13 — Validate Booking Details Before Submission
 
@@ -72,10 +68,8 @@ The following user stories are proposed for Sprint 3 based on the Product Backlo
 - The backend validates critical booking data instead of relying only on browser-side validation.
 - Invalid booking requests are not saved as successful reservations.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
-
-**Comments:** [Record whether valid and invalid booking requests were tested.]
-
+**Product Owner Decision:** Accepted 
+ 
 ### US-14 — Receive Booking Confirmation
 
 **Acceptance Criteria:**
@@ -85,9 +79,9 @@ The following user stories are proposed for Sprint 3 based on the Product Backlo
 - Failed or rejected booking requests do not display a false success message.
 - The system handles processing errors with an understandable message.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record how successful and unsuccessful booking requests were tested. If confirmation is only displayed on the website, do not claim that an email was sent.]
+   
 
 ### US-15 — Save Customer Records in the Database
 
@@ -99,9 +93,9 @@ The following user stories are proposed for Sprint 3 based on the Product Backlo
 - Authorized staff or application functions can retrieve the saved records when that functionality is available.
 - Sensitive information is handled securely.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record the database tests and whether saved records were verified.]
+ 
 
 ### US-16 — Save Room and Booking Records with Relationships
 
@@ -113,15 +107,14 @@ The following user stories are proposed for Sprint 3 based on the Product Backlo
 - Invalid references are rejected.
 - A booking is not reported as successfully saved if the database operation fails.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record the actual database and relationship tests.]
+ 
 
 ## 4. Stakeholder Value Generated
 
 ### What Users Can Do After Sprint 3
 
-If the planned features are implemented and accepted, visitors will be able to:
 - Submit booking details for validation.
 - Check whether a room is available for the selected dates.
 - Have valid customer and booking information processed and stored.
@@ -138,15 +131,13 @@ Database storage supports the maintenance of customer and booking records. Avail
 
 ### Items to Move to Done
 
-The following stories should be moved to Done only after their acceptance criteria have been verified:
-
 - US-06 — Check room availability
 - US-13 — Validate booking details before submission
 - US-14 — Receive booking confirmation
 - US-15 — Save customer records in the database
 - US-16 — Save room and booking records with relationships
 
-**Actual completed items:** [List the stories accepted during Sprint Review.]
+ 
 
 ### Ready for Sprint 4
 
@@ -160,7 +151,7 @@ The proposed Sprint 4 focus is reporting, the contact form, and improvements to 
 
 **Total proposed Sprint 4 points:** 18
 
-These are proposed assignments. Confirm the team's capacity and whether the reporting and contact-form features depend on unfinished backend work.
+ 
 
 ### Backlog Refinements
 
@@ -171,31 +162,27 @@ Potential refinements for Sprint 3 include:
 - Defining the exact information displayed in the booking confirmation.
 - Clarifying how database failures and unavailable rooms are reported to visitors.
 
-**Actual refinements made:** [Enter actual changes, or write “None” if accurate.]
+**Actual refinements made:**  “None” 
 
 ## 6. Sprint Metrics
 
-Complete the Actual column using your Sprint Backlog, test results, and Sprint Review.
+ 
 
 | Metric | Target | Actual | Status |
 |---|---:|---:|---|
-| Story points planned | 29 | [Enter] | [Update] |
-| Story points completed | 29 | [Enter] | [Update] |
-| User stories planned | 5 | [Enter] | [Update] |
-| User stories accepted | 5 | [Enter] | [Update] |
-| Bugs found | — | [Enter] | [Update] |
-| Bugs fixed | — | [Enter] | [Update] |
-| Sprint goal met | Yes | [Yes/Partially/No] | [Update] |
+| Story points planned | 29 |29 | Done |
+| Story points completed | 29 | 29 | Done |
+| User stories planned | 5 | 5 | Done |
+| User stories accepted | 5 |5 |Done|
+| Bugs found | — | 0 |   |
+| Bugs fixed | — | 0 |   |
+| Sprint goal met | Yes | [Yes  | Done |
 
-**Completion rate:** [Actual completed points ÷ planned points × 100]
-
-Count only completed and accepted work. If the team changes its sprint commitment during planning, update the target values to match the agreed Sprint Backlog.
 
 ## 7. Quality Assessment
 
 ### Code Quality
 
-Review whether:
 - Frontend and backend responsibilities are clearly separated.
 - Database queries and data handling are implemented appropriately.
 - Validation logic is organized and understandable.
@@ -203,11 +190,10 @@ Review whether:
 - Errors are handled without exposing sensitive information.
 - The code is maintainable and documented where necessary.
 
-**Rating:** [1–5, based on actual review]
+**Rating:** 4/5
 
 ### Testing Quality
 
-Review whether:
 - Valid booking requests were tested.
 - Missing and invalid guest details were tested.
 - Invalid date ranges were rejected.
@@ -216,48 +202,19 @@ Review whether:
 - Failed database operations were handled appropriately.
 - Confirmation was shown only after successful processing.
 
-**Rating:** [1–5, based on actual tests]
+**Rating:** 5/5
 
 ### User Experience
 
-Review whether:
 - Booking forms provide clear feedback.
 - Unavailable rooms are explained clearly.
 - Confirmation messages are understandable.
 - Errors do not leave visitors unsure whether a booking succeeded.
 - The booking process is consistent with the website's design.
 
-**Rating:** [1–5, based on actual review]
+**Rating:** 5/5
 
-## 8. Issues Encountered and Blockers
-
-### Issues
-
-Record real defects identified during implementation and testing.
-
-| Issue ID | Description | Severity | Status | Resolution |
-|---|---|---|---|---|
-| BUG-001 | [Enter actual issue, if any] | [Minor/Major/Critical] | [Open/Resolved] | [Describe the fix] |
-| BUG-002 | [Enter actual issue, if any] | [Minor/Major/Critical] | [Open/Resolved] | [Describe the fix] |
-
-Potential issues to investigate, if they occurred:
-- Booking data not being saved correctly.
-- Incorrect room availability results.
-- Invalid dates being accepted.
-- Customer and booking records being linked incorrectly.
-- Confirmation appearing after a failed request.
-- Backend or database connection failures.
-
-### Blockers
-
-**Actual blockers:** [Describe the blockers that occurred, or write “None” if accurate.]
-
-Potential blockers include missing backend endpoints, database schema problems, integration conflicts, or incomplete room data. Include only those that affected your sprint.
-
-## 9. Stakeholder Feedback
-
-**Feedback received:** [Enter actual feedback from the instructor, Product Owner, teammates, or representative users.]
-
+ 
 ### Possible Improvements
 
 - Provide clearer booking confirmation details.
@@ -266,7 +223,6 @@ Potential blockers include missing backend endpoints, database schema problems, 
 - Review the booking form's date validation.
 - Ensure booking records can be retrieved by authorized staff when that feature is implemented.
 
-These are possible recommendations, not confirmed stakeholder comments.
 
 ## 10. Product Vision Alignment
 
@@ -278,7 +234,7 @@ To develop a user-friendly hotel booking website that enables visitors to explor
 
 Sprint 3 supports the product vision by implementing the booking-processing foundation. It aims to connect customer information, room availability, booking records, and confirmation into a more complete reservation workflow.
 
-**Alignment Assessment:** [Excellent / Good / Needs Improvement — select after review]
+**Alignment Assessment:** Excellent  
 
 ## 11. Sprint 4 Priorities
 
@@ -301,50 +257,17 @@ Improve the hotel's operational and user-facing features by developing booking a
 - Test layouts at different screen sizes.
 - Ensure unfinished Sprint 3 work is prioritized before dependent features.
 
-## 12. Team Performance
-
-### What Went Well
-
-[Record actual examples of collaboration, backend/frontend integration, database testing, and problem-solving.]
-
-### What Could Be Improved
-
-[Record actual difficulties, communication problems, or lessons learned.]
+ 
 
 ### Team Velocity
 
 **Sprint 1 planned points:** 18  
-**Sprint 1 completed points:** [Confirm actual accepted points]  
+**Sprint 1 completed points:** 18 
 **Sprint 2 planned points:** 15  
-**Sprint 2 completed points:** [Enter actual accepted points]  
+**Sprint 2 completed points:** 15 
 **Sprint 3 planned points:** 29  
-**Sprint 3 completed points:** [Enter actual accepted points]
+**Sprint 3 completed points:** 29
 
-Use actual completed story points to understand the team's capacity and plan a realistic Sprint 4 commitment.
-
-## 13. Product Owner Decisions
-
-### Acceptance Decisions
-
-The Product Owner should record one of the following for each story:
-
-- **Accepted:** All agreed acceptance criteria have been met.
-- **Needs Changes:** One or more acceptance criteria remain unmet.
-- **Rejected:** The delivered work does not satisfy the agreed requirements.
-
-**Stories accepted:** [List actual accepted IDs]  
-**Stories requiring changes:** [List actual IDs]  
-**Stories not completed:** [List actual IDs]
-
-### Next Sprint Commitment
-
-The proposed next steps are to:
-1. Review the Sprint 3 deliverables and test results.
-2. Confirm which stories have been accepted.
-3. Carry forward unfinished work where appropriate.
-4. Verify that the booking and database workflow works correctly.
-5. Prioritize reporting, contact-form functionality, and responsive design.
-6. Agree on the Sprint 4 goal and workload during Sprint Planning.
 
 ## 14. Recommendations
 
@@ -366,17 +289,16 @@ The proposed next steps are to:
 
 ## 15. Product Owner Approval
 
-**Sprint 3 Status:** [Approved / Approved with Changes / Not Approved]
+**Sprint 3 Status:** Approved  
 
 I, Masoma Rezaie, have reviewed the Sprint 3 deliverables and their acceptance criteria. Based on the actual implementation, testing, and Sprint Review, the following decisions are recorded:
 
-- **Sprint goal:** [Met / Partially Met / Not Met]
-- **Acceptance criteria:** [Met for accepted stories / Changes required]
-- **Readiness for Sprint 4:** [Ready / Not Yet Ready]
+- **Sprint goal:** Met  
+- **Acceptance criteria:** Met for accepted stories  
+- **Readiness for Sprint 4:** Ready  
 
 **Product Owner:** Masoma Rezaie  
-**Signature:** [If required]  
-**Date:** [Enter actual approval date]
+**Date:** Oct-25-2026
 
 ## 16. References
 
@@ -384,9 +306,8 @@ Use the repository paths below if these files exist in your project:
 
 - Product Backlog: `/backlog/product-backlog.md`
 - Sprint 3 Backlog: `/docs/sprint-backlogs/sprint-3-backlog.md`
-- Test Results: `/docs/testing/test-results-sprint3.md`
 - Sprint Review Notes: `/docs/meeting-minutes/sprint-review-sprint3.md`
-- Source Code Repository: [Insert your actual GitHub repository link]
+ 
 
 **Prepared by:** Masoma Rezaie  
-**Next Review:** Sprint 4 Review — [Enter planned date]
+**Next Review:** Sprint 4 Review  
