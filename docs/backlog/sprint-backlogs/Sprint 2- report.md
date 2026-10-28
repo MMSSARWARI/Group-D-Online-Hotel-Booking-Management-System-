@@ -25,7 +25,7 @@ The sprint also aims to improve the user experience by providing a clear form la
 - Initial form validation and testing.
 - Integration preparation for future backend and database processing.
 
-**Sprint Goal Status:** [Achieved / Partially Achieved / Not Achieved — select the actual result]
+**Sprint Goal Status:** Achieved  
 
 ## 2. Completed User Stories
 
@@ -33,18 +33,18 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 
 | ID | User Story | Story Points | Status | Notes |
 |---|---|---:|---|---|
-| US-07 | Open booking form via Book Now | 3 | [Update] | Verify the button opens the correct form |
-| US-08 | Enter guest name | 2 | [Update] | Verify name input |
-| US-09 | Enter guest email/phone | 3 | [Update] | Verify contact information fields |
-| US-10 | Select room type on booking form | 3 | [Update] | Verify room selection |
-| US-11 | Choose check-in date | 2 | [Update] | Verify arrival date input |
-| US-12 | Choose check-out date | 2 | [Update] | Verify departure date input |
+| US-07 | Open booking form via Book Now | 3 | Done | Verify the button opens the correct form |
+| US-08 | Enter guest name | 2 | Done | Verify name input |
+| US-09 | Enter guest email/phone | 3 | Done | Verify contact information fields |
+| US-10 | Select room type on booking form | 3 | Done  | Verify room selection |
+| US-11 | Choose check-in date | 2 | Done  | Verify arrival date input |
+| US-12 | Choose check-out date | 2 | Done  | Verify departure date input |
 
 **Total planned story points:** 15
 
-**Actual story points completed:** [Enter the points for accepted stories]
+**Actual story points completed:** 15
 
-**Completion percentage:** [Actual completed points ÷ 15 × 100]
+**Completion percentage:** 100%
 
 ## 3. Acceptance Criteria Review
 
@@ -56,9 +56,9 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 - The booking form displays the required input fields.
 - The form is accessible from the main hotel website.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record whether the button and booking form were tested successfully.]
+**Comments:**  The button and booking form were tested successfully. 
 
 ### US-08 — Enter Guest Name
 
@@ -69,9 +69,9 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 - The system identifies a missing name if the field is required.
 - The entered information is available for subsequent booking validation.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted 
 
-**Comments:** [Record the actual input and validation test results.]
+**Comments:**   the input and validation test get results. 
 
 ### US-09 — Enter Guest Email/Phone
 
@@ -82,9 +82,9 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 - The system validates the phone number according to the project's chosen rules.
 - Missing or invalid required contact information produces a clear message.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record whether valid and invalid contact information was tested.]
+**Comments:**   valid and invalid contact information was tested. 
 
 ### US-10 — Select Room Type
 
@@ -95,9 +95,9 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 - The selected room type remains available for booking validation.
 - The form prevents submission without a required room selection.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record whether the available options and selected value were tested.]
+**Comments:**  the available options and selected value were tested. 
 
 ### US-11 — Choose Check-in Date
 
@@ -107,9 +107,9 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 - The field follows the date format used by the form.
 - The system prevents invalid or disallowed dates according to the booking rules.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted 
 
-**Comments:** [Record the date-selection tests and any validation issues.]
+**Comments:**  date-selection tests and any validation issues. 
 
 ### US-12 — Choose Check-out Date
 
@@ -120,9 +120,9 @@ The following user stories were selected for Sprint 2 based on the Product Backl
 - The system displays a clear validation message if the dates are invalid.
 - The selected dates are available for subsequent booking processing.
 
-**Product Owner Decision:** [Accepted / Rejected / Needs Changes]
+**Product Owner Decision:**  Accepted  
 
-**Comments:** [Record whether valid dates and an invalid date range were tested.]
+**Comments:**   valid dates and an invalid date range were tested. 
 
 ## 4. Stakeholder Value Generated
 
@@ -156,7 +156,7 @@ The following stories should be moved to Done only after their acceptance criter
 - US-11 — Choose check-in date
 - US-12 — Choose check-out date
 
-**Actual completed items:** [List the stories accepted during Sprint Review.]
+**Actual completed items:** US-07, US-08, US-09, US-010, US-011- US-012
 
 ### Ready for Sprint 3
 
@@ -171,8 +171,7 @@ Sprint 3 should focus on validating booking details, processing booking requests
 | US-16 | Save room and booking records with relationships | 8 |
 
 **Total proposed Sprint 3 points:** 29
-
-These stories may be too much for a single sprint, depending on the team's capacity and the current state of the backend. The team should prioritize them and agree on a realistic Sprint 3 commitment during Sprint Planning.
+ 
 
 ### Backlog Refinements
 
@@ -183,25 +182,24 @@ Potential refinements for Sprint 2 include:
 - Identifying the backend API and database dependencies.
 - Clarifying the difference between submitting a request and receiving a confirmed reservation.
 
-**Actual refinements made:** [Enter the changes that occurred, or write “None” if accurate.]
+**Actual refinements made:**  “None”  
 
 ## 6. Sprint Metrics
 
-Complete the Actual column using your Sprint Backlog, testing records, and Sprint Review results.
-
+ 
 | Metric | Target | Actual | Status |
 |---|---:|---:|---|
-| Story points planned | 15 | [Enter] | [Update] |
-| Story points completed | 15 | [Enter] | [Update] |
-| User stories planned | 6 | [Enter] | [Update] |
-| User stories accepted | 6 | [Enter] | [Update] |
-| Bugs found | — | [Enter] | [Update] |
-| Bugs fixed | — | [Enter] | [Update] |
-| Sprint goal met | Yes | [Yes/Partially/No] | [Update] |
+| Story points planned | 15 | 15 | Done |
+| Story points completed | 15 | 15 | Done |
+| User stories planned | 6 | 6| Done |
+| User stories accepted | 6 | 6 |   |
+| Bugs found | — | 0 |   |
+| Bugs fixed | — |   |   |
+| Sprint goal met | Yes | Yes  | Done |
 
-**Completion rate:** [Calculate using actual completed points ÷ planned points × 100]
+**Completion rate:** 100%
 
-A story should count as accepted only after the Product Owner has checked its acceptance criteria. If a story is incomplete, its points should not be counted as completed.
+ 
 
 ## 7. Quality Assessment
 
@@ -214,7 +212,7 @@ The following aspects should be reviewed:
 - Form fields have appropriate input types.
 - The code is maintainable and can be integrated with the backend.
 
-**Rating:** [1–5, based on actual review]
+**Rating:** 4/5
 
 ### Testing Quality
 
@@ -227,7 +225,7 @@ The following tests should be performed:
 - Verify that validation messages are understandable.
 - Test the form on the screen sizes and browsers supported by the project.
 
-**Rating:** [1–5, based on actual tests]
+**Rating:** 5/5
 
 ### User Experience
 
@@ -238,21 +236,9 @@ Review whether:
 - Error messages explain how to correct invalid information.
 - The form is consistent with the existing website design.
 
-**Rating:** [1–5, based on the actual review]
+**Rating:** 5/5
 
-## 8. Issues Encountered and Blockers
-
-### Issues
-
-Record actual bugs or difficulties identified during development and testing.
-
-| Issue ID | Description | Severity | Status | Resolution |
-|---|---|---|---|---|
-| BUG-001 | [Enter actual issue, if any] | [Minor/Major/Critical] | [Open/Resolved] | [Describe the fix] |
-| BUG-002 | [Enter actual issue, if any] | [Minor/Major/Critical] | [Open/Resolved] | [Describe the fix] |
-
-If no bugs were found during testing, state that no bugs were identified in the tests performed.
-
+ 
 ### Potential Blockers to Review
 
 - Difficulty connecting the booking form to the backend.
@@ -262,11 +248,9 @@ If no bugs were found during testing, state that no bugs were identified in the 
 - GitHub integration or merge conflicts.
 - Missing API endpoints or database tables.
 
-**Actual blockers:** [Enter the blockers that occurred, or write “None” if accurate.]
-
+**Actual blockers:**   “None” 
 ## 9. Stakeholder Feedback
-
-**Feedback received:** [Record actual feedback from the instructor, Product Owner, teammates, or representative users.]
+ 
 
 ### Possible Improvements
 
@@ -279,16 +263,14 @@ If no bugs were found during testing, state that no bugs were identified in the 
 These are recommendations to consider, not confirmed stakeholder comments.
 
 ## 10. Product Vision Alignment
-
-### Product Vision
-
-To develop a user-friendly hotel booking website that enables visitors to explore Aysan Luxury Hotel, compare room options, and submit booking requests through a clear and accessible interface.
+ 
+ 
 
 ### Sprint 2 Contribution
 
 Sprint 2 supports the product vision by introducing the booking form and collecting the information required to initiate a reservation. It connects the hotel browsing experience developed in Sprint 1 with the booking-processing features planned for subsequent sprints.
 
-**Alignment Assessment:** [Excellent / Good / Needs Improvement — select after review]
+**Alignment Assessment:** Excellent  
 
 ## 11. Sprint 3 Priorities
 
@@ -313,38 +295,13 @@ Implement the booking-processing workflow so that valid booking requests can be 
 - Display confirmation only after the backend reports a successful result.
 - Test database errors and invalid booking requests.
 
-## 12. Team Performance
-
-### What Went Well
-
-[Record actual examples of task completion, communication, collaboration, and problem-solving during Sprint 2.]
-
-### What Could Be Improved
-
-[Record actual difficulties and lessons learned.]
-
+ 
 ### Team Velocity
 
 **Sprint 1 planned points:** 18  
-**Sprint 1 completed points:** [Confirm the actual accepted points]  
+**Sprint 1 completed points:** 18 
 **Sprint 2 planned points:** 15  
-**Sprint 2 completed points:** [Enter actual accepted points]
-
-Team velocity should be calculated from the story points actually completed and accepted. Use the result to help the team plan a realistic workload for Sprint 3.
-
-## 13. Product Owner Decisions
-
-### Acceptance Decisions
-
-The Product Owner reviews each completed story and records one of the following decisions:
-
-- **Accepted:** All agreed acceptance criteria have been met.
-- **Needs Changes:** One or more acceptance criteria remain unmet.
-- **Rejected:** The delivered work does not satisfy the agreed requirements.
-
-**Stories accepted:** [List actual accepted IDs]  
-**Stories requiring changes:** [List actual IDs]  
-**Stories not completed:** [List actual IDs]
+**Sprint 2 completed points:** 15
 
 ### Next Sprint Commitment
 
@@ -378,28 +335,25 @@ The proposed next steps are to:
 
 ## 15. Product Owner Approval
 
-**Sprint 2 Status:** [Approved / Approved with Changes / Not Approved]
+**Sprint 2 Status:** Approved  
 
 I, Masoma Rezaie, have reviewed the Sprint 2 deliverables and their acceptance criteria. Based on the actual implementation, testing, and Sprint Review, the following decisions are recorded:
 
-- **Sprint goal:** [Met / Partially Met / Not Met]
-- **Acceptance criteria:** [Met for accepted stories / Changes required]
-- **Readiness for Sprint 3:** [Ready / Not Yet Ready]
+- **Sprint goal:** Met 
+- **Acceptance criteria:** Met for accepted stories  
+- **Readiness for Sprint 3:** Ready 
 
 **Product Owner:** Masoma Rezaie  
-**Signature:** [If required]  
-**Date:** [Enter actual approval date]
+**Signature:** 
+**Date:** Oct-22-2026
 
 ## 16. References
-
-Use the repository paths below if these files exist in your project:
-
+ 
 - Product Backlog: `/backlog/product-backlog.md`
-- Sprint 2 Backlog: `/docs/sprint-backlogs/sprint-2-backlog.md`
+- Sprint 2 Backlog: `/docs/sprint-backlogs/sprint-2-report.md`
 - Test Results: `/docs/testing/test-results-sprint2.md`
 - Sprint Review Notes: `/docs/meeting-minutes/sprint-review-sprint2.md`
-- Source Code Repository: [Insert your actual GitHub repository link]
-
+ 
 **Prepared by:** Masoma Rezaie  
-**Next Review:** Sprint 3 Review — [Enter planned date] 
+**Next Review:** Sprint 3 Review 
  
