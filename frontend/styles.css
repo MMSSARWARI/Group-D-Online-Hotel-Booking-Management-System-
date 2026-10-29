@@ -427,3 +427,16 @@ h2, h4 {
   }
 
   
+/*------------------- Messages from the server ----------------- */
+.message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.message.success { background-color: #e3f6e5; color: #1e6b2a; }
+.message.error { background-color: #fde8e8; color: #9b1c1c; }
+
+.booking-container { margin-top: 100px; }
+
+#reporting { padding-top: 40px; }

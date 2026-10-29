@@ -34,9 +34,11 @@ Meetings: at least two team meetings every week, plus sprint planning at the sta
 
 ## 4. Tech Stack
 
-Frontend: HTML and CSS
+Frontend: HTML, CSS and JavaScript
 
-Backend: Java
+Backend: Node.js with Express
+
+Database: MySQL (hotel_db)
 
 ## 5. Repository Structure
 
@@ -50,6 +52,24 @@ Backend: Java
 | recordings | Meeting recordings or links, by sprint |
 | sprint-analytics | Burndown charts |
 | backend, frontend, database | Source code |
+
+## How to Run the System
+
+1. Install MySQL Server and MySQL Workbench, and Node.js (LTS) from https://nodejs.org
+2. In MySQL Workbench, open database/database.sql and run the whole file (Ctrl+Shift+Enter). It creates hotel_db, the tables and test data.
+3. On Windows, double-click start.bat. It installs the packages, asks for your MySQL root password, starts the server and opens the website.
+   Other systems: open a terminal in the backend folder and run `npm install`, then `DB_PASSWORD=yourpassword npm start`.
+4. The website runs at http://localhost:3000. Keep the server window open while you use it.
+
+### Backend API
+
+| Method | Address | Description |
+|---|---|---|
+| GET | /api/rooms | List all rooms |
+| GET | /api/bookings | List all bookings |
+| POST | /api/bookings | Create a booking |
+| DELETE | /api/bookings/:id | Cancel a booking |
+| GET | /api/report | Totals for the report |
 
 ## Tools
 
