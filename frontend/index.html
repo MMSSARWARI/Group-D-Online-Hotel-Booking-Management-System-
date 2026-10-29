@@ -22,7 +22,6 @@
                 <a href="#rooms"><li>Rooms</li></a>
                 <a href="booking.html"><li>Booking</li></a>
                 <a href="#contact"><li>Contact</li></a>
-                <a href="#reporting"><li>Report</li></a>
             </ul>
             <div class="followMe">
             <h6>Follow Me</h6>
@@ -62,62 +61,6 @@
     </div>
   </section>
 
-  <!-- Report Section: filled by script.js from the database -->
-  <section id="reporting">
-    <div class="container mt-4">
-      <h2>Booking and Room Report</h2>
-
-      <div class="row text-center mb-4">
-        <div class="col-md-4">
-          <div class="card"><div class="card-body">
-            <h5>Total Bookings</h5>
-            <p id="totalBookings">-</p>
-          </div></div>
-        </div>
-        <div class="col-md-4">
-          <div class="card"><div class="card-body">
-            <h5>Available Rooms</h5>
-            <p id="availableRooms">-</p>
-          </div></div>
-        </div>
-        <div class="col-md-4">
-          <div class="card"><div class="card-body">
-            <h5>Total Customers</h5>
-            <p id="totalCustomers">-</p>
-          </div></div>
-        </div>
-      </div>
-
-      <h4>Current Bookings</h4>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Booking ID</th>
-            <th>Customer Name</th>
-            <th>Room Type</th>
-            <th>Check-In</th>
-            <th>Check-Out</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="bookingsTable"></tbody>
-      </table>
-
-      <h4>Room Availability</h4>
-      <table class="table table-bordered">
-        <thead>
-          <tr>
-            <th>Room ID</th>
-            <th>Type</th>
-            <th>Price per night</th>
-            <th>Status</th>
-          </tr>
-        </thead>
-        <tbody id="roomsTable"></tbody>
-      </table>
-    </div>
-  </section>
-
   <!-- Contact Us -->
   <section class="contact-section" id="contact">
     <h2 class="color">Contact Us</h2>
@@ -150,7 +93,7 @@
   </section>
 
   <footer>
-    <p>&copy; 2026 Aysan Hotel Booking. All rights reserved.</p>
+    <p>&copy; 2026 Aysan Hotel Booking. All rights reserved. | <a href="admin.html" style="color: #aaa;">Staff login</a></p>
   </footer>
 
   <script src="./script.js"></script>

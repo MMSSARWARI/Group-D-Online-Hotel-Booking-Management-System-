@@ -64,16 +64,19 @@ Database: MySQL (hotel_db)
 3. On Windows, double-click start.bat. It installs the packages, asks for your MySQL root password, starts the server and opens the website.
    Other systems: open a terminal in the backend folder and run `npm install`, then `DB_PASSWORD=yourpassword npm start`.
 4. The website runs at http://localhost:3000. Keep the server window open while you use it.
+5. Hotel staff open the admin page with the "Staff login" link at the bottom of the home page (http://localhost:3000/admin.html). Admin ID: admin, password: 1234. They can be changed in ADMIN_USERNAME and ADMIN_PASSWORD in backend/server.js.
 
 ### Backend API
 
-| Method | Address | Description |
-|---|---|---|
-| GET | /api/rooms | List all rooms |
-| GET | /api/bookings | List all bookings |
-| POST | /api/bookings | Create a booking |
-| DELETE | /api/bookings/:id | Cancel a booking |
-| GET | /api/report | Totals for the report |
+| Method | Address | Description | Who |
+|---|---|---|---|
+| GET | /api/rooms | List all rooms | Everyone |
+| GET | /api/bookings | List all bookings | Admin |
+| POST | /api/bookings | Create a booking | Everyone |
+| DELETE | /api/bookings/:id | Cancel a booking | Admin |
+| GET | /api/report | Totals for the report | Admin |
+| POST | /api/admin/login | Admin login, returns a token | Everyone |
+| POST | /api/admin/logout | Admin logout | Admin |
 
 ## Tools
 

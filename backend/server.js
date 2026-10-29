@@ -2,6 +2,7 @@
 // Node.js + Express server that connects the website to the MySQL database hotel_db.
 
 const express = require("express");
+const crypto = require("crypto");
 const mysql = require("mysql2/promise");
 const path = require("path");
 
@@ -18,12 +19,55 @@ const DB_CONFIG = {
 
 const PORT = 3000;
 
+// ---------- Admin settings ----------
+// Login for the admin page (admin.html)
+const ADMIN_USERNAME = process.env.ADMIN_USERNAME || "admin";
+const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || "1234";
+
 const pool = mysql.createPool(DB_CONFIG);
 const app = express();
 
 app.use(express.json());
 // Serve the website (index.html, booking.html, ...) from the frontend folder
 app.use(express.static(path.join(__dirname, "..", "frontend")));
+
+// ---------- Admin login ----------
+// After a correct password the server gives the admin a random token.
+// The admin page sends this token with every request that needs admin rights.
+const adminTokens = new Set();
+
+// Compare two texts in a way that does not leak information through timing
+function sameText(given, expected) {
+  const a = Buffer.from(String(given || ""));
+  const b = Buffer.from(expected);
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
+}
+
+function requireAdmin(req, res, next) {
+  const header = req.get("Authorization") || "";
+  const token = header.startsWith("Bearer ") ? header.slice(7) : "";
+  if (!adminTokens.has(token)) {
+    return res.status(401).json({ error: "Only the admin can do this. Please log in on the admin page." });
+  }
+  next();
+}
+
+app.post("/api/admin/login", (req, res) => {
+  const { username, password } = req.body || {};
+  const userOk = sameText(username, ADMIN_USERNAME);
+  const passOk = sameText(password, ADMIN_PASSWORD);
+  if (!userOk || !passOk) {
+    return res.status(401).json({ error: "Wrong admin ID or password." });
+  }
+  const token = crypto.randomBytes(24).toString("hex");
+  adminTokens.add(token);
+  res.json({ token });
+});
+
+app.post("/api/admin/logout", requireAdmin, (req, res) => {
+  adminTokens.delete(req.get("Authorization").slice(7));
+  res.json({ message: "Logged out." });
+});
 
 // ---------- Rooms ----------
 // List all rooms
@@ -39,8 +83,8 @@ app.get("/api/rooms", async (req, res) => {
 });
 
 // ---------- Bookings ----------
-// List all bookings with customer and room details
-app.get("/api/bookings", async (req, res) => {
+// List all bookings with customer and room details (admin only)
+app.get("/api/bookings", requireAdmin, async (req, res) => {
   try {
     const [rows] = await pool.query(
       `SELECT b.id, c.name AS customer, c.email, r.id AS room_id, r.type AS room_type,
@@ -141,8 +185,8 @@ app.post("/api/bookings", async (req, res) => {
   }
 });
 
-// Cancel a booking
-app.delete("/api/bookings/:id", async (req, res) => {
+// Cancel a booking (admin only)
+app.delete("/api/bookings/:id", requireAdmin, async (req, res) => {
   try {
     const [result] = await pool.query("DELETE FROM Booking WHERE id = ?", [req.params.id]);
     if (result.affectedRows === 0) {
@@ -154,8 +198,8 @@ app.delete("/api/bookings/:id", async (req, res) => {
   }
 });
 
-// ---------- Report ----------
-app.get("/api/report", async (req, res) => {
+// ---------- Report (admin only) ----------
+app.get("/api/report", requireAdmin, async (req, res) => {
   try {
     const [[bookings]] = await pool.query("SELECT COUNT(*) AS n FROM Booking");
     const [[available]] = await pool.query("SELECT COUNT(*) AS n FROM Room WHERE availability = TRUE");

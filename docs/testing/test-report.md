@@ -26,12 +26,13 @@ The tests use the test data in database/database.sql. Before each test run the d
 
 | Type | What we tested | How |
 |---|---|---|
-| Functional testing | Each function works as described in the user stories: list rooms, book a room, cancel a booking, report | Backend test cases TC01 to TC17 |
+| Functional testing | Each function works as described in the user stories: list rooms, book a room, cancel a booking, report, admin login | Backend test cases TC01 to TC17 |
 | Negative testing | The system rejects wrong input with a clear message and does not save it | TC06 to TC10, TC12, TC17, TC19, TC20, UI08 |
 | Boundary testing | Values at the limit: check-in and check-out on the same day, a booking that starts on the check-out day of another booking, a phone number of 16 characters | TC07, TC11, TC19 |
 | Integration testing | The website, the backend and the MySQL database work together, and the numbers on the website are the same as in the database | TC13, TC14, UI04, UI05, UI09, UI10 |
 | User interface testing | Pages, pictures, buttons and forms in the browser | UI01 to UI12 |
-| Regression testing | After each fix, all test cases were run again to check that nothing else stopped working | Full run after the fixes of D08 and D09 |
+| Security testing | Only the admin can see all bookings and the report, and cancel bookings | TC21 to TC27, TC29, UI13 to UI19 |
+| Regression testing | After each fix, all test cases were run again to check that nothing else stopped working | Full run after the fixes of D08, D09 and D10 |
 
 ### 3.2 Steps
 
@@ -61,13 +62,23 @@ The tests use the test data in database/database.sql. Before each test run the d
 | TC11 | Booking that starts on the check-out day of another booking | Room 6, 13 to 15 Nov | Booking saved | Booking 5 saved | Pass |
 | TC12 | Room that does not exist | Room 99 | Rejected with message | HTTP 404, "Room not found." | Pass |
 | TC13 | Same customer books again | Same email as TC05 | Booking saved, no second customer row | Booking saved, 1 customer row for this email | Pass |
-| TC14 | Report totals | GET /api/report | Totals equal the counts in the database | 6 bookings, 6 available rooms, 5 customers, same as in MySQL | Pass |
-| TC15 | List bookings | GET /api/bookings | All bookings with customer and room | 6 bookings | Pass |
-| TC16 | Cancel booking | DELETE /api/bookings/4 | Booking deleted | HTTP 200, "Booking cancelled." | Pass |
-| TC17 | Cancel the same booking again | DELETE /api/bookings/4 | Rejected with message | HTTP 404, "Booking not found." | Pass |
+| TC14 | Report totals (logged in as admin) | GET /api/report | Totals equal the counts in the database | 6 bookings, 6 available rooms, 5 customers, same as in MySQL | Pass |
+| TC15 | List bookings (logged in as admin) | GET /api/bookings | All bookings with customer and room | 6 bookings | Pass |
+| TC16 | Cancel booking (logged in as admin) | DELETE /api/bookings/4 | Booking deleted | HTTP 200, "Booking cancelled." | Pass |
+| TC17 | Cancel the same booking again (logged in as admin) | DELETE /api/bookings/4 | Rejected with message | HTTP 404, "Booking not found." | Pass |
 | TC18 | Name with an apostrophe | Name "O'Brien" | Saved correctly | Saved as O'Brien | Pass |
 | TC19 | Phone number longer than 15 characters | "+123456789012345" (16 characters) | Rejected with a clear message | First run: HTTP 500 with a database error. After fix: HTTP 400, "Phone number can have at most 15 characters." | Pass after fix |
 | TC20 | Text instead of a date | "hello" and "world" | Rejected with a clear message | First run: HTTP 500 with a database error. After fix: HTTP 400, "Please enter valid dates." | Pass after fix |
+
+| TC21 | Cancel a booking without admin login | DELETE /api/bookings/1, no token | Rejected | HTTP 401, "Only the admin can do this." | Pass |
+| TC22 | See all bookings without admin login | GET /api/bookings, no token | Rejected | HTTP 401 | Pass |
+| TC23 | See the report without admin login | GET /api/report, no token | Rejected | HTTP 401 | Pass |
+| TC24 | Cancel with a made-up token | Authorization: Bearer abc | Rejected | HTTP 401 | Pass |
+| TC25 | Admin login with a wrong password | ID "admin", password "guess" | Rejected | HTTP 401, "Wrong admin ID or password." | Pass |
+| TC29 | Admin login with a wrong ID | ID "boss", password "1234" | Rejected | HTTP 401, "Wrong admin ID or password." | Pass |
+| TC26 | Admin login with the right ID and password | ID "admin", password "1234" | Token returned | Token of 48 characters returned | Pass |
+| TC27 | Use the token after log out | Old token | Rejected | HTTP 401 | Pass |
+| TC28 | Customer can still book and see rooms without login | POST /api/bookings, GET /api/rooms | Booking saved, rooms listed | HTTP 201 and HTTP 200 | Pass |
 
 ## 5. Website Test Cases
 
@@ -76,15 +87,23 @@ The tests use the test data in database/database.sql. Before each test run the d
 | UI01 | Rooms on the home page | 8 room cards from the database | 8 cards | Pass |
 | UI02 | Room pictures | All 8 pictures load | 8 of 8 | Pass |
 | UI03 | Unavailable rooms | No Book Now button for the 2 unavailable rooms | 2 rooms show "Not available" | Pass |
-| UI04 | Report totals | Numbers come from the database | Total bookings shown | Pass |
-| UI05 | Current bookings table | Bookings from the database are listed | Rows shown | Pass |
+| UI04 | Report totals on the admin page | Numbers come from the database | Total bookings shown | Pass |
+| UI05 | Current bookings table on the admin page | Bookings from the database are listed | Rows shown | Pass |
 | UI06 | Book Now button | Booking page opens with the chosen room selected | booking.html?id=1, Family Room selected | Pass |
 | UI07 | Past dates | Dates before today cannot be chosen | Minimum date is today | Pass |
 | UI08 | Wrong dates in the form | Message shown, nothing saved | "Check-out date must be after the check-in date." | Pass |
 | UI09 | Booking from the form | Green message with booking number and price | "Booking confirmed! Booking number 9: Family Room, 2 night(s), total $518." | Pass |
-| UI10 | Cancel button in the report | Booking removed from the list | 8 rows before, 7 rows after | Pass |
+| UI10 | Cancel button on the admin page | Booking removed from the list | 8 rows before, 7 rows after | Pass |
 | UI11 | Contact form | Thank you message | Message shown | Pass |
 | UI12 | Page opened without the server | Clear message telling the user to start the server | Message shown | Pass |
+
+| UI13 | Public website | No report and no Cancel button for customers | Not shown | Pass |
+| UI14 | Public menu | No Report link in the menu | Not shown | Pass |
+| UI15 | Admin page before login | Only the login form is shown | Only login form | Pass |
+| UI16 | Admin login with a wrong password | Message, report stays hidden | "Wrong admin ID or password." | Pass |
+| UI17 | Admin login with the right ID and password | Report with bookings is shown | Report shown with all bookings | Pass |
+| UI18 | Reload the admin page | Admin stays logged in in the same tab | Still logged in | Pass |
+| UI19 | Log out | Report is hidden, login form is shown | Login form shown | Pass |
 
 ## 6. Defects Found and Fixed
 
@@ -100,12 +119,14 @@ The tests use the test data in database/database.sql. Before each test run the d
 | D08 | A phone number longer than 15 characters caused a server error (TC19) | server.js | Added a length check with a clear message | Fixed |
 | D09 | Text instead of a date caused a server error (TC20) | server.js | Added a date format check with a clear message | Fixed |
 
+| D10 | Every visitor could see all customers' names and booking dates in the Report section and cancel any booking, because the report and the Cancel button were on the public home page and the backend did not check who sent the request | index.html, server.js | Moved the report to a separate admin page (admin.html) with an admin ID and password. The backend now accepts the booking list, the report and cancelling only from a logged-in admin | Fixed |
+
 ## 7. Summary
 
 | Item | Number |
 |---|---|
-| Test cases | 32 |
-| Passed on first run | 30 |
+| Test cases | 48 |
+| Passed on first run | 46 |
 | Passed after fix | 2 |
 | Failed | 0 |
-| Defects found and fixed | 9 |
+| Defects found and fixed | 10 |

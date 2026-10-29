@@ -16,13 +16,28 @@ const roomImages = {
 const SERVER_HINT = "Could not reach the server. Start it with 'npm start' in the backend folder and open http://localhost:3000";
 
 // Send a request to the backend and return the JSON answer
-async function api(url, options) {
+async function api(url, options = {}) {
+  const token = getAdminToken();
+  if (token) {
+    options.headers = { ...(options.headers || {}), Authorization: "Bearer " + token };
+  }
   const response = await fetch(url, options);
   const data = await response.json();
   if (!response.ok) {
     throw new Error(data.error || "Request failed");
   }
   return data;
+}
+
+// The admin token is kept only for this browser tab
+function getAdminToken() {
+  try { return sessionStorage.getItem("adminToken"); } catch (e) { return null; }
+}
+function setAdminToken(token) {
+  try {
+    if (token) sessionStorage.setItem("adminToken", token);
+    else sessionStorage.removeItem("adminToken");
+  } catch (e) { /* storage not available */ }
 }
 
 function escapeHtml(text) {
@@ -63,11 +78,54 @@ async function loadRooms() {
   }
 }
 
-// ------------------------------ Report ------------------------------
-async function loadReport() {
-  const totalBookings = document.getElementById("totalBookings");
-  if (!totalBookings) return;
+// ------------------------------ Admin page ------------------------------
+function setupAdminPage() {
+  const loginForm = document.getElementById("loginForm");
+  if (!loginForm) return;
 
+  const loginBox = document.getElementById("loginBox");
+  const reportSection = document.getElementById("reporting");
+  const logoutLink = document.getElementById("logoutLink");
+  const loginMessage = document.getElementById("loginMessage");
+
+  function showReport(loggedIn) {
+    loginBox.style.display = loggedIn ? "none" : "block";
+    reportSection.style.display = loggedIn ? "block" : "none";
+    logoutLink.style.display = loggedIn ? "inline" : "none";
+    if (loggedIn) loadReport();
+  }
+
+  loginForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    try {
+      const result = await api("/api/admin/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: document.getElementById("adminUsername").value.trim(),
+          password: document.getElementById("adminPassword").value
+        })
+      });
+      setAdminToken(result.token);
+      loginForm.reset();
+      loginMessage.textContent = "";
+      loginMessage.className = "";
+      showReport(true);
+    } catch (err) {
+      showMessage(loginMessage, err.message === "Failed to fetch" ? SERVER_HINT : err.message, false);
+    }
+  });
+
+  logoutLink.addEventListener("click", async () => {
+    try { await api("/api/admin/logout", { method: "POST" }); } catch (e) { /* already logged out */ }
+    setAdminToken(null);
+    showReport(false);
+  });
+
+  showReport(!!getAdminToken());
+}
+
+async function loadReport() {
   try {
     const [report, bookings, rooms] = await Promise.all([
       api("/api/report"),
@@ -75,17 +133,18 @@ async function loadReport() {
       api("/api/rooms")
     ]);
 
-    totalBookings.textContent = report.totalBookings;
+    document.getElementById("totalBookings").textContent = report.totalBookings;
     document.getElementById("availableRooms").textContent = report.availableRooms;
     document.getElementById("totalCustomers").textContent = report.totalCustomers;
 
     const bookingsTable = document.getElementById("bookingsTable");
     bookingsTable.innerHTML = bookings.length === 0
-      ? `<tr><td colspan="6">No bookings yet.</td></tr>`
+      ? `<tr><td colspan="7">No bookings yet.</td></tr>`
       : bookings.map(b => `
         <tr>
           <td>${b.id}</td>
           <td>${escapeHtml(b.customer)}</td>
+          <td>${escapeHtml(b.email)}</td>
           <td>${escapeHtml(b.room_type)}</td>
           <td>${b.check_in}</td>
           <td>${b.check_out}</td>
@@ -100,8 +159,14 @@ async function loadReport() {
         <td>${r.availability ? "Available" : "Not available"}</td>
       </tr>`).join("");
   } catch (err) {
+    if (/admin/i.test(err.message)) {
+      // The token is no longer valid, for example after the server was restarted
+      setAdminToken(null);
+      location.reload();
+      return;
+    }
     document.getElementById("bookingsTable").innerHTML =
-      `<tr><td colspan="6" style="color: red;">${SERVER_HINT}</td></tr>`;
+      `<tr><td colspan="7" style="color: red;">${SERVER_HINT}</td></tr>`;
   }
 }
 
@@ -209,7 +274,7 @@ function setupContactForm() {
 // Start everything when the page has loaded
 document.addEventListener("DOMContentLoaded", () => {
   loadRooms();
-  loadReport();
+  setupAdminPage();
   setupBookingForm();
   setupContactForm();
 });
