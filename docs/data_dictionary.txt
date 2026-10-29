@@ -1,0 +1,19 @@
+
+Table: Customer
+- id: INT, primary key, auto increment
+- name: VARCHAR(100), customer's full name
+- email: VARCHAR(100), customer's email
+- phone: VARCHAR(15), customer's phone number
+
+Table: Room
+- id: INT, primary key, auto increment
+- type: VARCHAR(50), e.g., Single, Double, Suite
+- price: DECIMAL(10,2), room cost per night
+- availability: BOOLEAN, whether the room is available
+
+Table: Booking
+- id: INT, primary key, auto increment
+- customer_id: INT, foreign key -> Customer(id)
+- room_id: INT, foreign key -> Room(id)
+- check_in: DATE, date of check-in
+- check_out: DATE, date of check-out
