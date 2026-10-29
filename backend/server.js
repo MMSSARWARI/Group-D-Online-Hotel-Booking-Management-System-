@@ -63,6 +63,17 @@ app.post("/api/bookings", async (req, res) => {
   if (!name || !email || !phone || !roomId || !checkIn || !checkOut) {
     return res.status(400).json({ error: "Please fill in all fields." });
   }
+  const datePattern = /^\d{4}-\d{2}-\d{2}$/;
+  if (!datePattern.test(checkIn) || !datePattern.test(checkOut) ||
+      isNaN(new Date(checkIn)) || isNaN(new Date(checkOut))) {
+    return res.status(400).json({ error: "Please enter valid dates." });
+  }
+  if (String(phone).length > 15) {
+    return res.status(400).json({ error: "Phone number can have at most 15 characters." });
+  }
+  if (String(name).length > 100 || String(email).length > 100) {
+    return res.status(400).json({ error: "Name and email can have at most 100 characters." });
+  }
   if (checkIn >= checkOut) {
     return res.status(400).json({ error: "Check-out date must be after the check-in date." });
   }
