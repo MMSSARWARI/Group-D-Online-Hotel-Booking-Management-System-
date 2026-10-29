@@ -63,6 +63,7 @@ Database: MySQL (hotel_db)
 2. In MySQL Workbench, open database/database.sql and run the whole file (Ctrl+Shift+Enter). It creates hotel_db, the tables and test data.
 3. On Windows, double-click start.bat. It installs the packages, asks for your MySQL root password, starts the server and opens the website.
    Other systems: open a terminal in the backend folder and run `npm install`, then `DB_PASSWORD=yourpassword npm start`.
+   In VS Code: open the project folder, run `npm install` once in the backend folder (Terminal, New Terminal, then `cd backend` and `npm install`), then press F5 and choose "Start hotel server". VS Code asks for your MySQL password and opens the website.
 4. The website runs at http://localhost:3000. Keep the server window open while you use it.
 5. Hotel staff open the admin page with the "Staff login" link at the bottom of the home page (http://localhost:3000/admin.html). Admin ID: admin, password: 1234. They can be changed in ADMIN_USERNAME and ADMIN_PASSWORD in backend/server.js.
 

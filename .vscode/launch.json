@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Start hotel server",
+      "program": "${workspaceFolder}/backend/server.js",
+      "cwd": "${workspaceFolder}/backend",
+      "env": { "DB_PASSWORD": "${input:mysqlPassword}" },
+      "console": "integratedTerminal",
+      "serverReadyAction": {
+        "pattern": "Server running at (http://localhost:\\d+)",
+        "uriFormat": "%s",
+        "action": "openExternally"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "mysqlPassword",
+      "type": "promptString",
+      "description": "Your MySQL root password",
+      "password": true
+    }
+  ]
+}
