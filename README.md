@@ -32,6 +32,10 @@ Total sprints: 6
 
 Meetings: at least two team meetings every week, plus sprint planning at the start and sprint review and retrospective at the end of each sprint.
 
+### Team Communication
+
+The team members live in different time zones, so it was often not possible to meet at the same time for live meetings. For this reason we could not hold and record a meeting for every stand-up, and we do not have meeting minutes for all meetings. Instead, we worked at the same time in our WhatsApp group, where each member shared what they had done, what they would do next and any problems. The meetings that we could hold together were recorded, and the links are in the recordings folder.
+
 ## 4. Tech Stack
 
 Frontend: HTML, CSS and JavaScript
