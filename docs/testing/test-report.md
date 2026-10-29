@@ -37,22 +37,12 @@ The tests use the test data in database/database.sql. Before each test run the d
 
 1. Reset the database by running database/database.sql in MySQL Workbench, so every run starts with the same test data (8 rooms, 3 customers, 3 bookings).
 2. Start the server with start.bat or `npm start` in the backend folder.
-3. Run the backend tests with `node docs/testing/api-test.js` in a second terminal. The script sends requests to the backend and prints PASS or FAIL for each test case.
+3. Run the backend test cases in section 4 by sending requests to the backend and comparing the answer with the expected result.
 4. Do the website tests in the browser at http://localhost:3000, following the table in section 5.
 5. Compare the results with the data in MySQL Workbench, for example with `SELECT * FROM Booking;`.
 6. Write every failed test case in the defect table (section 6) with what went wrong and where.
 7. Fix the defect in the code, then repeat steps 1 to 5 for all test cases, not only for the failed one.
 8. Mark the defect as fixed only when all test cases pass.
-
-### 3.3 How to repeat the tests
-
-Any team member can repeat the backend tests on their own laptop:
-
-```
-node docs/testing/api-test.js
-```
-
-The script needs a running server and fresh test data. On 29 October 2026 the result was "20 passed, 0 failed". The tests add test bookings to the database, so run database.sql again afterwards.
 
 ## 4. Backend Test Cases
 
