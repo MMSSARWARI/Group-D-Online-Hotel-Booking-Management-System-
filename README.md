@@ -27,8 +27,8 @@ Total sprints: 6
 | Sprint 2 | 14 to 21 Oct 2026 | 20 user stories, prioritised product backlog, requirement specification, use case diagram |
 | Sprint 3 | 20 to 24 Oct 2026 | Sequence diagrams, database design, user registration and login |
 | Sprint 4 | 24 to 28 Oct 2026 | Room search, room booking, booking cancellation |
-| Sprint 5 | 25 to 28 Oct 2026 | Payment, admin room management, booking history |
-| Sprint 6 | 29 Oct to 1 Nov 2026 | Reports, testing, final review and retrospective, final documentation |
+| Sprint 5 | 28 to 30 Oct 2026 | Payment, admin room management, booking history |
+| Sprint 6 | 30 Oct to 1 Nov 2026 | Reports, testing, final review and retrospective, final documentation |
 
 Meetings: at least two team meetings every week, plus sprint planning at the start and sprint review and retrospective at the end of each sprint.
 
