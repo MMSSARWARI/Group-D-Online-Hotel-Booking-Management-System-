@@ -4,7 +4,7 @@ Project: Aysan Luxury Hotel Booking System (Group D)
 Course: Software Engineering, ITC315
 Version: 2.0, 1 November 2026
 
-This document describes the requirements of the system as it was built at the end of Sprint 6. The general requirements that the team agreed at the start are in docs/Requirement_Specification.md (version 1.0, Product Owner). Here we write which of them were implemented, how, and how they were tested. The test case IDs (TC and UI) refer to docs/testing/test-report.md.
+This document describes the requirements of the system as it was built at the end of Sprint 6. The general requirements that the team agreed at the start are in 1-first-requirements-v1.md in this folder (version 1.0, written by the Product Owner). Here we write which of them were implemented, how, and how they were tested. The test case IDs (TC and UI) refer to docs/testing/test-report.md.
 
 ## 1. Scope
 
@@ -135,5 +135,5 @@ These items were in the product backlog or the first plan but are not part of th
 | Email confirmation to the guest | ENH-05 |
 | Admin page to add rooms or change prices and availability; this is done in MySQL Workbench | Sprint 5 plan in README |
 | Saving or sending contact messages | US-18 |
-| Online payment and customer accounts | Out of scope (Requirement Specification 2.2) |
+| Online payment and customer accounts | Out of scope (first requirements, section 2.2) |
 | Publishing the website on the internet with HTTPS | NFR-001 |
