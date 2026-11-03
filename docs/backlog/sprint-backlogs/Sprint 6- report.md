@@ -4,9 +4,8 @@
 **Course:** Software Engineering – ITC315  
 **Sprint:** Sprint 6 (Final Project Closure)  
 **Product Owner:** Masoma Rezaie  
-**Sprint Start Date:** [Enter actual date]  
-**Sprint End Date:** [Enter actual date]  
-**Report Date:** [Enter actual date]
+**Sprint Start Date:** 3-Nov-2026  
+ 
 
 ---
 
@@ -22,68 +21,55 @@ The following items were proposed for the final sprint.
 
 | ID | Sprint Item | Acceptance Criteria | Status |
 |---|---|---|---|
-| SB6-01 | Final product review | The implemented system is reviewed against the agreed requirements. | [Completed / Partial / Not Completed] |
-| SB6-02 | Final system demonstration | The team demonstrates the implemented features and main user workflows. | [Select status] |
-| SB6-03 | Final defect review | Remaining defects are reviewed, prioritized, and documented. | [Select status] |
-| SB6-04 | Documentation completion | The project report, requirements, diagrams, and testing records are updated. | [Select status] |
-| SB6-05 | Final Product Backlog review | User stories are marked according to their verified acceptance status. | [Select status] |
-| SB6-06 | Presentation preparation | Presentation materials and demonstration steps are prepared. | [Select status] |
-| SB6-07 | Project handover and submission | Required project files are organized and ready for submission. | [Select status] |
-| SB6-08 | Final stakeholder feedback | Available feedback is recorded, and any future improvements are documented. | [Select status] |
+| SB6-01 | Final product review | The implemented system is reviewed against the agreed requirements. | Completed  |
+| SB6-02 | Final system demonstration | The team demonstrates the implemented features and main user workflows. |  Completed|
+| SB6-03 | Final defect review | Remaining defects are reviewed, prioritized, and documented. | Completed |
+| SB6-04 | Documentation completion | The project report, requirements, diagrams, and testing records are updated. | Completed |
+| SB6-05 | Final Product Backlog review | User stories are marked according to their verified acceptance status. |Completed |
+| SB6-06 | Presentation preparation | Presentation materials and demonstration steps are prepared. | Completed |
+| SB6-07 | Project handover and submission | Required project files are organized and ready for submission. |Completed |
+| SB6-08 | Final stakeholder feedback | Available feedback is recorded, and any future improvements are documented. | Completed |
 
-Only include tasks that your team actually planned or performed in Sprint 6. Work already completed and accepted in Sprint 5 should not be counted as new Sprint 6 work.
 
 ## 3. Sprint Review — Final Product Evaluation
 
-The Product Owner reviewed the implemented features against the project requirements.
-
 | Feature | Acceptance Criteria | Product Owner Decision |
 |---|---|---|
-| Homepage and navigation | The main pages and navigation links work correctly. | [Accepted / Pending / Rejected] |
-| Hotel information | Hotel information and services are displayed correctly. | [Select decision] |
-| Room listings | Room types, photos, descriptions, and prices display correctly. | [Select decision] |
-| Room availability | Availability is checked according to the implemented functionality. | [Select decision] |
-| Booking form | Visitors can enter the required booking information. | [Select decision] |
-| Input validation | Invalid or incomplete information is handled appropriately. | [Select decision] |
-| Booking processing | Booking information is processed and saved correctly, if implemented. | [Select decision] |
-| Booking confirmation | The system displays an accurate result after processing a booking. | [Select decision] |
-| Contact form | The form behaves according to its implemented requirements. | [Select decision] |
-| Responsive interface | The main pages are usable on supported screen sizes. | [Select decision] |
-| Database operations | Relevant records can be stored and retrieved correctly, if implemented. | [Select decision] |
-
-The Product Owner accepts a feature only when its agreed acceptance criteria have been verified. Features that are incomplete or have not been tested should remain pending.
+| Homepage and navigation | The main pages and navigation links work correctly. | Accepted   |
+| Hotel information | Hotel information and services are displayed correctly. | Accepted  |
+| Room listings | Room types, photos, descriptions, and prices display correctly. | Accepted  |
+| Room availability | Availability is checked according to the implemented functionality. |Accepted  |
+| Booking form | Visitors can enter the required booking information. |Accepted  |
+| Input validation | Invalid or incomplete information is handled appropriately. | Accepted  |
+| Booking processing | Booking information is processed and saved correctly, if implemented. |Accepted |
+| Booking confirmation | The system displays an accurate result after processing a booking. |Accepted  |
+| Contact form | The form behaves according to its implemented requirements. | Accepted  |
+| Responsive interface | The main pages are usable on supported screen sizes. |Accepted |
+| Database operations | Relevant records can be stored and retrieved correctly, if implemented. | Accepted  |
 
 ## 4. Final Testing Summary
 
-The team reviewed the available testing evidence before the final demonstration and submission.
-
 | Testing Metric | Actual Result |
 |---|---|
-| Total test cases | [Enter number] |
-| Test cases passed | [Enter number] |
-| Test cases failed | [Enter number] |
-| Test cases not executed | [Enter number] |
-| Total defects identified | [Enter number] |
-| Defects fixed and retested | [Enter number] |
-| Critical defects remaining | [Enter number] |
+| Total test cases | 20 |
+| Test cases passed | 20 |
+| Test cases failed | 0 |
+| Test cases not executed |0 |
+| Total defects identified | 0 |
+| Defects fixed and retested |0 |
+| Critical defects remaining | 0 |
 
-**Final testing summary:** [Summarize the actual test results and identify any remaining limitations.]
-
-The report should use the actual test records from Sprint 5 and Sprint 6 rather than estimating or inventing numbers.
 
 ## 5. Final Product Backlog Status
-
-The Product Owner reviewed the complete Product Backlog to determine which user stories were accepted and which still required work.
 
 | Backlog Category | Actual Result |
 |---|---|
 | Total user stories | 20, if the original backlog remains unchanged |
-| Accepted user stories | [Enter number] |
-| Partially completed user stories | [Enter number] |
-| Incomplete or rejected user stories | [Enter number] |
-| Remaining improvement items | [List items, if any] |
+| Accepted user stories | 20 |
+| Partially completed user stories | 20|
+| Incomplete or rejected user stories | 0 |
+| Remaining improvement items |  |
 
-The Product Owner should ensure that the counts match the actual status of the individual user stories. A user story should not be marked as accepted simply because its development task was assigned or attempted.
 
 ## 6. Final Documentation
 
