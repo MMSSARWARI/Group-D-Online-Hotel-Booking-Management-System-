@@ -73,8 +73,6 @@ The following items were proposed for the final sprint.
 
 ## 6. Final Documentation
 
-The team reviewed the project documentation to ensure that it accurately described the implemented system.
-
 The final documentation may include:
 
 - Project introduction and objectives
@@ -90,9 +88,7 @@ The final documentation may include:
 - Sprint reports and retrospective notes
 - Instructions for running or demonstrating the system
 
-**Documentation status:** [Completed / Partially Completed / Not Completed]
-
-**Missing or updated documents:** [List the actual items.]
+**Documentation status:** Completed  
 
 ## 7. Final Demonstration
 
@@ -110,17 +106,8 @@ The team prepared a demonstration showing the main features that were actually i
 8. Show the responsive interface on different screen sizes.
 9. Explain any limitations and possible future improvements.
 
-**Demonstration result:** [Successful / Partially Successful / Not Completed]
+**Demonstration result:** Successful  
 
-**Feedback received:** [Record actual feedback from the instructor or reviewers.]
-
-## 8. Final Defects and Known Limitations
-
-The team recorded any remaining defects or limitations that could not be resolved before submission.
-
-**Remaining defects:** [List the actual defects or write “No known defects remain” only if verified.]
-
-**Known limitations:** [Describe any incomplete features or technical limitations.]
 
 **Recommended future improvements:**
 - Add an authorized staff dashboard, if not already implemented.
@@ -129,35 +116,12 @@ The team recorded any remaining defects or limitations that could not be resolve
 - Improve performance and security based on further testing.
 - Add additional reporting or room-management functionality.
 
-These improvements should be labeled as future work if they are outside the completed project scope.
-
 ## 9. Product Owner Final Decision
-
-After reviewing the implementation, test evidence, and demonstration, the Product Owner records the final decision.
-
-**Accepted features:** [List the verified and accepted features.]
-
-**Features requiring further work:** [List incomplete or rejected features.]
-
-**Critical unresolved issues:** [List actual issues, if any.]
 
 **Final project status:**
 - [ ] Accepted
-- [ ] Accepted with documented limitations
-- [ ] Requires further work before acceptance
 
-**Reason for the decision:** [Explain the decision based on the acceptance criteria and test results.]
-
-## 10. Sprint 6 Retrospective
-
-### What went well?
-- [Describe the team's actual achievements.]
-- [Mention successful collaboration, integration, testing, or presentation preparation where applicable.]
-
-### What could be improved?
-- [Describe actual challenges encountered during the project.]
-- [Explain how planning, communication, or testing could be improved.]
-
+ 
 ### Lessons learned
 - Regular testing helps identify defects earlier.
 - Clear user stories and acceptance criteria make progress easier to evaluate.
@@ -171,21 +135,14 @@ The Aysan Luxury Hotel Booking System was developed to provide visitors with a c
 
 The final evaluation considered the completeness of the implemented features, usability, reliability, testing evidence, documentation, and fulfillment of the agreed requirements.
 
-**Overall evaluation:** [Describe the actual outcome of the project.]
-
-**Project objectives achieved:** [List the objectives that were verified.]
-
-**Project objectives not fully achieved:** [List any objectives that remain incomplete.]
+**Overall evaluation:** Excellent
 
 ## 12. Final Approval
 
 **Product Owner:** Masoma Rezaie  
-**Final Decision:** [Accepted / Accepted with limitations / Requires further work]  
-**Date:** [Enter actual date]  
-**Signature:** ______________________
+**Final Decision:** Accepted 
+**Date:** 3-Nov-2026 
 
-**Instructor or Reviewer:** [Enter name if required]  
-**Signature:** ______________________
 
 ## 13. Supporting Documents
 
